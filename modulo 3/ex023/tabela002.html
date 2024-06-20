@@ -9,23 +9,47 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
-        th{
-            background-color: gray;
+        thead, tfoot{
+            background-color:rgb(59, 59, 59);
             color: white;
         }
 
         table{
+            position: relative;
             width: 400px;
             height: 200px;
             border-collapse: collapse;
         }
+        caption{
+            background-color: gray;
+            color: white;
+            font-size: 1.4em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color:rgb(59, 59, 59)
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: white;
+        }
+        tbody > tr:nth-child(even){
+            background-color: lightslategray;
+        }
 
         th,td{
             border: 1px solid black;
         }
         td.num{
             text-align: right;
+        }
+
+        tbody > tr:hover{
+            background-color: navy;
+            color: aliceblue;
         }
 
 
@@ -35,10 +59,11 @@
     <h1>Anatomia para tabelas Grandes</h1>
 
     <table>
+        <caption>População das unidades Federavitas</caption>
         <thead>
             <tr>
                 <th>Estado</th>
-                <th>População</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -146,10 +171,18 @@
         <tfoot>
             <tr>
                 <th>Total de Habitantes</th>
-                <td class="num"><strong>00000000000</strong></td>
+                <th class="num"><strong>00000000000</strong></th>
             </tr>
         </tfoot>
     </table>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus aperiam asperiores nemo eum quaerat id obcaecati, libero sit quas quasi voluptatum quod saepe! Quod maxime consectetur qui laudantium quas sapiente?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum minima iure autem temporibus. Minus voluptas, dolorum, suscipit debitis excepturi iste earum eos autem fugit aliquid veniam enim ipsa, fuga repudiandae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore itaque amet nobis expedita mollitia, provident aliquid beatae harum unde a praesentium reprehenderit, quidem dolores tempora hic eum ipsam similique suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque possimus doloribus quas. Atque repellat quam minus nulla, perspiciatis asperiores illum magnam dolorum velit aliquid. Reprehenderit molestiae magni perferendis ipsam eaque! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem obcaecati deleniti magni commodi expedita architecto, dicta recusandae voluptatibus repellat voluptatum, totam nemo dolor quibusdam accusamus quia consequuntur iusto dolores ab! Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa maiores sunt necessitatibus quibusdam dignissimos rerum nisi, id corporis doloribus molestias? Quos veniam fuga amet laborum placeat eaque eligendi nobis enim.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus aperiam asperiores nemo eum quaerat id obcaecati, libero sit quas quasi voluptatum quod saepe! Quod maxime consectetur qui laudantium quas sapiente?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum minima iure autem temporibus. Minus voluptas, dolorum, suscipit debitis excepturi iste earum eos autem fugit aliquid veniam enim ipsa, fuga repudiandae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore itaque amet nobis expedita mollitia, provident aliquid beatae harum unde a praesentium reprehenderit, quidem dolores tempora hic eum ipsam similique suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque possimus doloribus quas. Atque repellat quam minus nulla, perspiciatis asperiores illum magnam dolorum velit aliquid. Reprehenderit molestiae magni perferendis ipsam eaque! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem obcaecati deleniti magni commodi expedita architecto, dicta recusandae voluptatibus repellat voluptatum, totam nemo dolor quibusdam accusamus quia consequuntur iusto dolores ab! Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa maiores sunt necessitatibus quibusdam dignissimos rerum nisi, id corporis doloribus molestias? Quos veniam fuga amet laborum placeat eaque eligendi nobis enim.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus aperiam asperiores nemo eum quaerat id obcaecati, libero sit quas quasi voluptatum quod saepe! Quod maxime consectetur qui laudantium quas sapiente?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum minima iure autem temporibus. Minus voluptas, dolorum, suscipit debitis excepturi iste earum eos autem fugit aliquid veniam enim ipsa, fuga repudiandae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore itaque amet nobis expedita mollitia, provident aliquid beatae harum unde a praesentium reprehenderit, quidem dolores tempora hic eum ipsam similique suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque possimus doloribus quas. Atque repellat quam minus nulla, perspiciatis asperiores illum magnam dolorum velit aliquid. Reprehenderit molestiae magni perferendis ipsam eaque! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem obcaecati deleniti magni commodi expedita architecto, dicta recusandae voluptatibus repellat voluptatum, totam nemo dolor quibusdam accusamus quia consequuntur iusto dolores ab! Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa maiores sunt necessitatibus quibusdam dignissimos rerum nisi, id corporis doloribus molestias? Quos veniam fuga amet laborum placeat eaque eligendi nobis enim.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus aperiam asperiores nemo eum quaerat id obcaecati, libero sit quas quasi voluptatum quod saepe! Quod maxime consectetur qui laudantium quas sapiente?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum minima iure autem temporibus. Minus voluptas, dolorum, suscipit debitis excepturi iste earum eos autem fugit aliquid veniam enim ipsa, fuga repudiandae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore itaque amet nobis expedita mollitia, provident aliquid beatae harum unde a praesentium reprehenderit, quidem dolores tempora hic eum ipsam similique suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque possimus doloribus quas. Atque repellat quam minus nulla, perspiciatis asperiores illum magnam dolorum velit aliquid. Reprehenderit molestiae magni perferendis ipsam eaque! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem obcaecati deleniti magni commodi expedita architecto, dicta recusandae voluptatibus repellat voluptatum, totam nemo dolor quibusdam accusamus quia consequuntur iusto dolores ab! Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa maiores sunt necessitatibus quibusdam dignissimos rerum nisi, id corporis doloribus molestias? Quos veniam fuga amet laborum placeat eaque eligendi nobis enim.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus aperiam asperiores nemo eum quaerat id obcaecati, libero sit quas quasi voluptatum quod saepe! Quod maxime consectetur qui laudantium quas sapiente?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum minima iure autem temporibus. Minus voluptas, dolorum, suscipit debitis excepturi iste earum eos autem fugit aliquid veniam enim ipsa, fuga repudiandae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore itaque amet nobis expedita mollitia, provident aliquid beatae harum unde a praesentium reprehenderit, quidem dolores tempora hic eum ipsam similique suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque possimus doloribus quas. Atque repellat quam minus nulla, perspiciatis asperiores illum magnam dolorum velit aliquid. Reprehenderit molestiae magni perferendis ipsam eaque! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem obcaecati deleniti magni commodi expedita architecto, dicta recusandae voluptatibus repellat voluptatum, totam nemo dolor quibusdam accusamus quia consequuntur iusto dolores ab! Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa maiores sunt necessitatibus quibusdam dignissimos rerum nisi, id corporis doloribus molestias? Quos veniam fuga amet laborum placeat eaque eligendi nobis enim.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus aperiam asperiores nemo eum quaerat id obcaecati, libero sit quas quasi voluptatum quod saepe! Quod maxime consectetur qui laudantium quas sapiente?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum minima iure autem temporibus. Minus voluptas, dolorum, suscipit debitis excepturi iste earum eos autem fugit aliquid veniam enim ipsa, fuga repudiandae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore itaque amet nobis expedita mollitia, provident aliquid beatae harum unde a praesentium reprehenderit, quidem dolores tempora hic eum ipsam similique suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque possimus doloribus quas. Atque repellat quam minus nulla, perspiciatis asperiores illum magnam dolorum velit aliquid. Reprehenderit molestiae magni perferendis ipsam eaque! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem obcaecati deleniti magni commodi expedita architecto, dicta recusandae voluptatibus repellat voluptatum, totam nemo dolor quibusdam accusamus quia consequuntur iusto dolores ab! Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa maiores sunt necessitatibus quibusdam dignissimos rerum nisi, id corporis doloribus molestias? Quos veniam fuga amet laborum placeat eaque eligendi nobis enim.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus aperiam asperiores nemo eum quaerat id obcaecati, libero sit quas quasi voluptatum quod saepe! Quod maxime consectetur qui laudantium quas sapiente?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum minima iure autem temporibus. Minus voluptas, dolorum, suscipit debitis excepturi iste earum eos autem fugit aliquid veniam enim ipsa, fuga repudiandae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore itaque amet nobis expedita mollitia, provident aliquid beatae harum unde a praesentium reprehenderit, quidem dolores tempora hic eum ipsam similique suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque possimus doloribus quas. Atque repellat quam minus nulla, perspiciatis asperiores illum magnam dolorum velit aliquid. Reprehenderit molestiae magni perferendis ipsam eaque! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem obcaecati deleniti magni commodi expedita architecto, dicta recusandae voluptatibus repellat voluptatum, totam nemo dolor quibusdam accusamus quia consequuntur iusto dolores ab! Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa maiores sunt necessitatibus quibusdam dignissimos rerum nisi, id corporis doloribus molestias? Quos veniam fuga amet laborum placeat eaque eligendi nobis enim.</p>
 
     
 </body>
