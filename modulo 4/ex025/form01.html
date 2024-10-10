@@ -8,15 +8,31 @@
 <body>
 
     <h1>Meu primeiro formulario</h1>
-    <form action="cadastro.php" autocomplete="off" method="post">
+    <form action="cadastro.php" autocomplete="on" method="post">
         <p>
             <label for="inome">Nome: </label>
-            <input type="text" name="nome" id="inome">
+            <input type="text" placeholder="Jarbas" name="nome" id="inome" minlength="4" maxlength="15" required>
         </p>
         <p>
             <label for="isobrenome">Sobrenome</label> 
-            <input type="text" name="sobrenome" id="isobrenome"></p>
+            <input type="text" placeholder="Silva" name="sobrenome" id="isobrenome" minlength="4" maxlength="15" required>
+        </p>
+        <p>
+            <label for="isenha">Senha:</label>
+            <input type="password" id="isenha" required minlength="8">
+        </p>
+
+        <p>
+            <label for="iEmail">Email:</label>
+            <input autocomplete="off" type="email" placeholder="jarbasocara@gmail.com" id="iEmail" required>
+        </p>
+
+        <p>
+            <label for="icelular">Celular:</label>
+            <input type="tel" id="icelular" placeholder="(00)00000-0000" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" >
+        </p>
         <p><input type="submit" value="Enviar"></p>
+        <p><input type="reset" value="Reset"></p>
     </form>
     
 </body>
