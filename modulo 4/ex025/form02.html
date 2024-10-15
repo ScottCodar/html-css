@@ -6,6 +6,18 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Enviando Documentos, imagens e caixa de comentarios</h1>
+    <form action="cadastro.php" method="POST" enctype="multipart/form-data">
+        <p>
+            <label for="ifile">Imagem</label>
+            <input type="file" id="ifile" accept="image/png, image/jpg, image/svg">
+        </p>
+
+        <p>
+            <label for="icomentario">comentario</label>
+            <textarea name="comentarios" id="icomentario" cols="30" rows="10" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptatem ab mollitia quasi molestias reiciendis adipisci placeat debitis nostrum magnam, eligendi libero excepturi nesciunt quaerat corporis at blanditiis voluptates tempore.</textarea>
+        </p>
+    </form>
     
 </body>
 </html>
