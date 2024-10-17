@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        div#logo{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        div#logo>img{
+            width: 40%;
+        }
+
+        input#nome{
+            width: 300px;
+            background-color: azure;
+        }
+
+        input#idade{
+            width: 50px;
+        }
+
+        section{
+            margin: auto;
+            padding: 0px 5px;
+            text-align: justify;
+            width: 950px;
+            border: 1px solid black;
+        }
+
+        h2, h3{
+            text-align: center;
+            background-color: rgb(228, 228, 228);
+            border: 1px solid black;
+        }
+
+        textarea#comentario{
+            width: 948px;
+            height: 200px;
+            resize: none;
+        }
+
+        .checkbox{
+            row-gap: 10px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <section>
+
+        <div id="logo">
+            <img src="imagens/Captura de tela 2024-10-16 164803.png" alt="">
+            <h1>Hospital Grey+Sloan</h1>
+        </div>
+        <br>
+        <hr>
+
+        <p>
+            <label for="nome">Nome / Paciente:</label>
+            <input type="text" name="nome" id="nome" placeholder="Bjorn the Quick-witted" required>
+            <label for="idade">Idade: </label>
+            <input type="number" name="idade" id="idade" required>
+            <label for="data">Data de nascimente: </label>
+            <input type="date">
+            <label for="sex">Sexo: </label>
+            <select name="Sexo" id="sex" required>
+                <option value="">Masculino</option>
+                <option value="">Feminino</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="cpf">CPF: </label>
+            <input type="text" name="cpf" id="cpf" required>
+        </p>
+
+        <p>
+            <label for="sus">Cartão do SUS: </label>
+            <input type="text">
+        </p>
+
+        <p>
+            <label for="registro">RG ou CNH: </label>
+            <input type="text" name="registro" id="registro">
+        </p>
+
+        <p>
+            <label for="prof">Profissional do Atendimento: </label>
+            <input type="text">
+        </p>
+
+        <p>
+            <label for="dregistro">Dia & Hora do Atendimento</label>
+            <input type="datetime-local" name="dregistro" id="dregistro">
+            <label for="obito">Hora do óbito</label>
+            <input type="datetime-local" name="" id="">
+        </p>
+        <hr>
+        <br>
+
+        <h2>Avaliação Médica</h2>
+        <br>
+
+        <h3>Queixas Príncipais / Historia da doênça</h3>
+        <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea resize>
+        <br>
+
+        <h3>Antecedentes pessoais</h3>
+        <p class="checkbox">
+            <label for="asma">Asma</label>
+            <input type="checkbox" name="asma" id="asma">
+
+            <label for="hipertensao">hipertensão</label>
+            <input type="checkbox" name="hipertensao" id="hipertensao">
+
+            <label for="asma">Asma</label>
+            <input type="checkbox" name="asma" id="asma">
+
+            <label for="hipertensao">hipertensão</label>
+            <input type="checkbox" name="hipertensao" id="hipertensao">
+
+            <label for="asma">Asma</label>
+            <input type="checkbox" name="asma" id="asma">
+
+            <label for="hipertensao">hipertensão</label>
+            <input type="checkbox" name="hipertensao" id="hipertensao">
+        </p>
+
+    </section>
+    
+</body>
+</html>
