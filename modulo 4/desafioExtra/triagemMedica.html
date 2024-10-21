@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,8 +46,29 @@
 
         textarea#comentario{
             width: 948px;
-            height: 200px;
+            height: 130px;
             resize: none;
+        }
+
+        table{
+            margin: auto;
+            border-collapse: separate;
+        }
+
+        tr,td{
+            text-align: justify;
+            /*border: 1px solid black;*/
+            padding: 5px 50px;
+        }
+
+        footer{
+            margin: auto;
+            padding: 0px 5px;
+            text-align: justify;
+            width: 950px;
+        }
+        .assi{
+            text-align: right;
         }
 
     </style>
@@ -114,27 +135,72 @@
         <br>
 
         <h3>Antecedentes pessoais</h3>
-        <p class="checkbox">
-            <label for="asma">Asma</label>
-            <input type="checkbox" name="asma" id="asma">
+        <table>
+            <tr>
+                <td>
+                    <label for="asma">Asma</label>
+                    <input type="checkbox" name="asma" id="asma">
+                </td>
+                <td>
+                    <label for="hipertensao">Hipertensão</label>
+                    <input type="checkbox" name="hipertensao" id="hipertensao">
+                </td>
+                <td>
+                    <label for="cardiopatia">Cardiopatia</label>
+                    <input type="checkbox" name="cardiopatia" id="cardiopatia">
+                </td>
+            </tr>
 
-            <label for="hipertensao">hipertensão</label>
-            <input type="checkbox" name="hipertensao" id="hipertensao">
+            <tr>
+                <td>
+                    <label for="tvptep">TVP/TEP</label>
+                    <input type="checkbox" name="tvptep" id="tvptep">
+                </td>
+                <td>
+                    <label for="dpoc">DPOC</label>
+                    <input type="checkbox" name="dpoc" id="dpoc">
+                </td>
+                <td>
+                    <label for="tabagismo">Tabagismo</label>
+                    <input type="checkbox" name="tabagismo" id="tabagismo">
+                </td>
+            </tr>
 
-            <label for="asma">Asma</label>
-            <input type="checkbox" name="asma" id="asma">
+            <tr>
+                <td>
+                    <label for="dic">Doença infecto contagiosa</label>
+                    <input type="checkbox" name="dic" id="dic">
+                </td>
+                <td>
+                    <label for="etilismo">Etilismo</label>
+                    <input type="checkbox" name="etilismo" id="etilismo">
+                </td>
+                <td>
+                    <label for="od">Outras doenças</label>
+                    <input type="checkbox" name="od" id="od">
+                    <input type="text">
+                </td>
+            </tr>
+        </table>
 
-            <label for="hipertensao">hipertensão</label>
-            <input type="checkbox" name="hipertensao" id="hipertensao">
+        <h3>Exame físico</h3>
+        <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea resize>
+        <br>
 
-            <label for="asma">Asma</label>
-            <input type="checkbox" name="asma" id="asma">
+        <h3>Plano Terapêutico</h3>
+        <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea resize>
+        <br>
 
-            <label for="hipertensao">hipertensão</label>
-            <input type="checkbox" name="hipertensao" id="hipertensao">
-        </p>
+        <h3>Hipoteses Diagnosticas Iniciais</h3>
+        <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea resize>
+        <br>       
 
     </section>
+
+    <footer>
+        <p class="assi">________________________________________</p>
+        <p class="assi">Assinatura</p>
+    </footer>
     
 </body>
 </html>
