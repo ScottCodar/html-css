@@ -6,28 +6,55 @@
     <title>Document</title>
     <style>
 
-        .grid{
-            columns: 2;
-            column-width: 100px;
+        *{
+            margin: 0;
+            padding: 0;
+        }
 
+        img{
+            width: 920px;
+            height: 400px;
+            
         }
+
+        .quadro{
+            display: flex;
+            margin: auto;
+            height: 500px;
+            background-color: blanchedalmond;
+            margin-top: 50px;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 0 50px 0 50px;
+        }
+
         .box{
-            background-color: aqua;
-            width: 60px;
-            border: 1px solid black;
-            text-align: center;
+            background-color: azure;
+            width: 150px;
+            height: 400px;     
+            transition: background-color 0.8s, width 0.8s;                
         }
+
+        .box:hover{
+            transition: 0.8s;
+            background-color: brown;
+            width: 920px;
+        }
+        .box:hover::before{
+            transition: width 0.8s;            
+        }
+
     </style>
 </head>
 <body>
 
-    <div class="grid">
-        <div class="box">BOX01</div>
-        <div class="box">BOX02</div>
-        <div class="box">BOX03</div>
-        <div class="box">BOX01</div>
-        <div class="box">BOX02</div>
-        <div class="box">BOX03</div>
+    <div class="quadro">
+        <div class="box"><img src="imagem/1a.jpg" alt=""></div>
+        <div class="box"><img src="imagem/2b.jpg" alt=""></div>
+        <div class="box"><img src="imagem/3c.jpg" alt=""></div>
+        <div class="box"><img src="imagem/4d.jpg" alt=""></div>
+        <div class="box"><img src="imagem/5e.jpg" alt=""></div>
+        <div class="box"><img src="imagem/6e.jpg" alt=""></div>
     </div>
     
 </body>
